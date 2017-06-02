@@ -11,7 +11,7 @@
     Learn more about Flex at http://flex.org 
     // -->
     <head>
-        <title>${title}</title>
+        <title>Maxximizer Live2D App</title>
         <meta name="google" value="notranslate" />         
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- Include CSS to eliminate any default margins/padding and set the height of the html element and 
@@ -23,7 +23,7 @@
         <style type="text/css" media="screen"> 
             html, body  { height:100%; }
             body { margin:0; padding:0; overflow:auto; text-align:center; 
-                   background-color: ${bgcolor}; }   
+                   background-color: $ffffff; } 
             object:focus { outline:none; }
             #flashContent { display:none; }
         </style>
@@ -43,7 +43,7 @@
             var flashvars = {};
             var params = {};
             params.quality = "high";
-            params.bgcolor = "#ff0000";
+            params.bgcolor = "#ffffff";
             params.allowscriptaccess = "sameDomain";
             params.allowfullscreen = "true";
             params.wmode = "direct";
@@ -52,8 +52,8 @@
             attributes.name = "${application}";
             attributes.align = "middle";
             swfobject.embedSWF(
-                "SampleApp2.swf", "flashContent", 
-                "640", "840", 
+                "SampleApp1.swf", "flashContent", 
+                "640", "800", 
                 swfVersionStr, xiSwfUrlStr, 
                 flashvars, params, attributes);
             // JavaScript enabled so display the flashContent div in case it is not replaced with a swf object.
@@ -104,6 +104,8 @@
                 </object>
                 <!--<![endif]-->
             </object>
-        </noscript>     
+        </noscript>
+			<center>Character © <a href=https://www.furaffinity.net/user/maxximizer/>Maxximizer<a> </center>
+			<center>Emoji icons supplied by <a href=https://www.emojione.com/>EmojiOne<a> </center>
    </body>
 </html>
